@@ -10,7 +10,7 @@ import java.lang.reflect.TypeVariable;
  * Created on 2016/8/29 13:32.
  * 未来不确定才更值得前行
  *
- * @author chengyibin
+ * @author user
  */
 public class JDTType {
     private Type type;

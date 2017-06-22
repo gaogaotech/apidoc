@@ -8,7 +8,6 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
 
-import com.hightech.apidoc.biz.service.AppService;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import org.slf4j.Logger;
@@ -18,6 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.support.TransactionTemplate;
 
+import com.hightech.apidoc.biz.service.AppService;
 import com.hightech.apidoc.core.apiparse.APIParse;
 import com.hightech.apidoc.core.util.StringUtil;
 import com.hightech.apidoc.core.util.VersionCompareUtil;
@@ -33,7 +33,7 @@ import com.hightech.apidoc.model.param.AppVersionQueryParam;
  * Created on 2016/8/26 11:32.
  * 未来不确定才更值得前行
  *
- * @author chengyibin
+ * @author user
  */
 @Service
 public class MaintainAllAppTask implements InitializingBean{

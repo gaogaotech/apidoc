@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
  * Created on 2016/8/26 15:19.
  * 未来不确定才更值得前行
  *
- * @author chengyibin
+ * @author user
  */
 @Configuration
 public class BeanConfig {

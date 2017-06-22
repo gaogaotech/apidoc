@@ -14,7 +14,7 @@ import com.hightech.apidoc.core.apiparse.entity.FieldsObj;
  * Created on 2016/8/25 15:21.
  * 未来不确定才更值得前行
  *
- * @author chengyibin
+ * @author user
  */
 public class DiffUtil {
 

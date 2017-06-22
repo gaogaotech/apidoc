@@ -6,7 +6,7 @@ import java.util.List;
  * Created on 2016/8/31 9:59.
  * 未来不确定才更值得前行
  *
- * @author chengyibin
+ * @author user
  */
 public class MqMessageVo<T> {
     private List<String> topicList;
