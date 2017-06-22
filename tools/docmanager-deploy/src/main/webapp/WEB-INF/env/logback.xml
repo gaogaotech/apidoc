@@ -209,14 +209,14 @@
     </appender>
 
     <!-- digest  -->
-    <logger name="com.zhaoyun.docmanager.common.template" additivity="false">
+    <logger name="com.hightech.apidoc.common.template" additivity="false">
         <level value="${LOG_LEVEL}"/>
         <appender-ref ref="docmanager-DIGEST-APPENDER"/>
         <appender-ref ref="error"/>
     </logger>
 
     <!-- commom package -->
-    <logger name="com.zhaoyun.docmanager.common" additivity="false">
+    <logger name="com.hightech.apidoc.common" additivity="false">
         <level value="${LOG_LEVEL}"/>
         <appender-ref ref="common"/>
         <appender-ref ref="error"/>
@@ -224,7 +224,7 @@
 
 
     <!-- dal package -->
-    <logger name="com.zhaoyun.docmanager.dal" additivity="false">
+    <logger name="com.hightech.apidoc.dal" additivity="false">
         <level value="${LOG_LEVEL}"/>
         <appender-ref ref="dal"/>
         <appender-ref ref="error"/>
@@ -237,7 +237,7 @@
     </logger>
 
     <!-- biz package -->
-    <logger name="com.zhaoyun.docmanager.biz" additivity="false">
+    <logger name="com.hightech.apidoc.biz" additivity="false">
         <level value="${LOG_LEVEL}"/>
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="biz"/>
@@ -246,21 +246,21 @@
 
 
     <!-- integration package -->
-    <logger name="com.zhaoyun.docmanager.integration" additivity="false">
+    <logger name="com.hightech.apidoc.integration" additivity="false">
         <level value="${LOG_LEVEL}"/>
         <appender-ref ref="integration"/>
         <appender-ref ref="error"/>
     </logger>
 
     <!-- controller -->
-    <logger name="com.zhaoyun.docmanager.web" additivity="false">
+    <logger name="com.hightech.apidoc.web" additivity="false">
         <level value="${LOG_LEVEL}"/>
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="controller"/>
         <appender-ref ref="error"/>
     </logger>
     
-    <logger name="com.zhaoyun.docmanager.core" additivity="false">
+    <logger name="com.hightech.apidoc.core" additivity="false">
         <level value="${LOG_LEVEL}"/>
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="core"/>

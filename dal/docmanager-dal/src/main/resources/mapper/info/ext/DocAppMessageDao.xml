@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.zhaoyun.docmanager.dal.dao.ext.DocAppMessageDao">
-	<select id="queryAllByAppId" resultMap="com.zhaoyun.docmanager.dal.dao.MBGDocAppMessageDao.BaseResultMap">
+<mapper namespace="com.hightech.apidoc.dal.dao.ext.DocAppMessageDao">
+	<select id="queryAllByAppId" resultMap="com.hightech.apidoc.dal.dao.MBGDocAppMessageDao.BaseResultMap">
 		select
-		<include refid="com.zhaoyun.docmanager.dal.dao.MBGDocAppMessageDao.Base_Column_List" />
+		<include refid="com.hightech.apidoc.dal.dao.MBGDocAppMessageDao.Base_Column_List" />
 		from `doc_app_message`
 		where `app_id` = #{appId,jdbcType=INTEGER}
 		<if test="sortColumn != null and sortColumn != ''">
@@ -14,10 +14,10 @@
 		</if>
 	</select>
 	
-	<select id="queryAllWithBLOBsByAppId" resultMap="com.zhaoyun.docmanager.dal.dao.MBGDocAppMessageDao.ResultMapWithBLOBs">
+	<select id="queryAllWithBLOBsByAppId" resultMap="com.hightech.apidoc.dal.dao.MBGDocAppMessageDao.ResultMapWithBLOBs">
 		select
-		<include refid="com.zhaoyun.docmanager.dal.dao.MBGDocAppMessageDao.Base_Column_List" />,
-		<include refid="com.zhaoyun.docmanager.dal.dao.MBGDocAppMessageDao.Blob_Column_List" />
+		<include refid="com.hightech.apidoc.dal.dao.MBGDocAppMessageDao.Base_Column_List" />,
+		<include refid="com.hightech.apidoc.dal.dao.MBGDocAppMessageDao.Blob_Column_List" />
 		from `doc_app_message`
 		where `app_id` = #{appId,jdbcType=INTEGER}
 		<if test="sortColumn != null and sortColumn != ''">

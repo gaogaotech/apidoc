@@ -12,7 +12,7 @@
 		<module>tools/docmanager-core</module>
 		<module>model/docmanager-model</module>
 	</modules>
-	<groupId>com.zhaoyun.docmanager</groupId>
+	<groupId>com.hightech.apidoc</groupId>
 	<artifactId>docmanager-parent</artifactId>
 	<version>1.0.0</version>
 
@@ -99,42 +99,42 @@
 				<version>1.2.29</version>
 			</dependency>
 			<dependency>
-				<groupId>com.zhaoyun.docmanager</groupId>
+				<groupId>com.hightech.apidoc</groupId>
 				<artifactId>docmanager-integration</artifactId>
 				<version>${docmanager.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.zhaoyun.docmanager</groupId>
+				<groupId>com.hightech.apidoc</groupId>
 				<artifactId>docmanager-facade</artifactId>
 				<version>${docmanager.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.zhaoyun.docmanager</groupId>
+				<groupId>com.hightech.apidoc</groupId>
 				<artifactId>docmanager-biz</artifactId>
 				<version>${docmanager.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.zhaoyun.docmanager</groupId>
+				<groupId>com.hightech.apidoc</groupId>
 				<artifactId>docmanager-dal</artifactId>
 				<version>${docmanager.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.zhaoyun.docmanager</groupId>
+				<groupId>com.hightech.apidoc</groupId>
 				<artifactId>docmanager-core</artifactId>
 				<version>${docmanager.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.zhaoyun.docmanager</groupId>
+				<groupId>com.hightech.apidoc</groupId>
 				<artifactId>docmanager-common</artifactId>
 				<version>${docmanager.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.zhaoyun.docmanager</groupId>
+				<groupId>com.hightech.apidoc</groupId>
 				<artifactId>docmanager-web</artifactId>
 				<version>${docmanager.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.zhaoyun.docmanager</groupId>
+				<groupId>com.hightech.apidoc</groupId>
 				<artifactId>docmanager-model</artifactId>
 				<version>${docmanager.version}</version>
 			</dependency>

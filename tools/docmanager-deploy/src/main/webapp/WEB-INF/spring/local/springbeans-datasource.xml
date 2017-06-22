@@ -57,7 +57,7 @@
 
     <!-- 自动扫描映射器   	-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.zhaoyun.docmanager.dal.dao"/>
+        <property name="basePackage" value="com.hightech.apidoc.dal.dao"/>
         <property name="sqlSessionFactoryBeanName" value="fortSqlSessionFactory"/>
     </bean>
 

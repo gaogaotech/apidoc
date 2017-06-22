@@ -9,7 +9,7 @@
 
     <aop:aspectj-autoproxy proxy-target-class="true"/>
 
-    <bean id="appConfig" class="com.zhaoyun.docmanager.common.commons.spring.config.SpringPlaceHolderConfigurer">
+    <bean id="appConfig" class="com.hightech.apidoc.common.commons.spring.config.SpringPlaceHolderConfigurer">
         <property name="locations">
             <array>
                 <value>/WEB-INF/env/env.properties</value>

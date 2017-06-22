@@ -32,7 +32,7 @@
             <property name="customTypeMap" value="TINYINT:java.lang.Integer"/>
         </javaTypeResolver>
 
-        <javaModelGenerator targetPackage="com.zhaoyun.docmanager.model.dvo"
+        <javaModelGenerator targetPackage="com.hightech.apidoc.model.dvo"
                             targetProject="..\..\model\docmanager-model\src\main\java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
@@ -48,7 +48,7 @@
                       value="mapper.info.ext"/>
         </sqlMapGenerator>
 
-        <javaClientGenerator targetPackage="com.zhaoyun.docmanager.dal.dao"
+        <javaClientGenerator targetPackage="com.hightech.apidoc.dal.dao"
                              targetProject="src\main\java"
                              type="XMLMAPPER">
             <property name="enableSubPackages" value="true"/>
@@ -57,7 +57,7 @@
             <property name="renamePlugin.search" value="Mapper\z"/>
             <property name="renamePlugin.replace" value="Dao"/>
             <property name="separateUserCodePlugin.targetPackage"
-                      value="com.zhaoyun.docmanager.dal.dao.ext"/>
+                      value="com.hightech.apidoc.dal.dao.ext"/>
             <property name="separateUserCodePlugin.search" value="\AMBG"/>
             <property name="separateUserCodePlugin.replace" value=""/>
         </javaClientGenerator>
