@@ -9,11 +9,12 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <packaging>jar</packaging>
     <artifactId>docmanager-biz</artifactId>
+    
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    
     <dependencies>
         <dependency>
             <groupId>com.hightech.apidoc</groupId>
@@ -23,13 +24,5 @@
             <groupId>com.hightech.apidoc</groupId>
             <artifactId>docmanager-core</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-        </dependency>
-
     </dependencies>
-
-
 </project>
