@@ -24,7 +24,6 @@
             <groupId>com.hightech.apidoc</groupId>
             <artifactId>docmanager-model</artifactId>
         </dependency>
-
     </dependencies>
 
     <build>
