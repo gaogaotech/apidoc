@@ -1,6 +1,5 @@
 package com.hightech.apidoc.core;
 
-import com.hightech.apidoc.common.commons.spring.config.SpringConfig;
 import com.hightech.apidoc.core.apiparse.APIParse;
 import com.hightech.apidoc.core.apiparse.entity.ClassParsedResult;
 import com.hightech.apidoc.core.apiparse.entity.FieldsObj;
@@ -37,7 +36,6 @@ public class ApiParserTest {
         map.put("snap_depot", "http://maven.mogujie.org/nexus/content/repositories/snapshots/");
         //map.put("snap_depot", "http://192.168.2.126:8081/nexus/content/repositories/releases/");
         map.put("public_depot", "http://maven.mogujie.org/nexus/content/repositories/releases");
-        SpringConfig.set(map);
     	String pomXml = "<dependency><groupId>com.mogujie.censor</groupId><artifactId>censor-server-api</artifactId><version>1.0.1-SNAPSHOT</version></dependency>";
 
         List<ClassParsedResult> list = APIParse.getJDTParsedResult(pomXml, "/Users/zhaoyun/apimanager/parse/");

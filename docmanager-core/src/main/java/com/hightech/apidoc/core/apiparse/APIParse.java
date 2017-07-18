@@ -37,7 +37,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.google.common.collect.Lists;
-import com.hightech.apidoc.common.commons.spring.config.SpringConfig;
 import com.hightech.apidoc.core.apiparse.entity.ClassParsedResult;
 import com.hightech.apidoc.core.apiparse.entity.MethodParsedResult;
 import com.hightech.apidoc.core.apiparse.entity.MqMessageObj;

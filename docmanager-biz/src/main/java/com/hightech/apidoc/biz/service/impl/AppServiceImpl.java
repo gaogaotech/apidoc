@@ -37,8 +37,6 @@ import com.hightech.apidoc.core.apiparse.entity.FieldsObj;
 import com.hightech.apidoc.core.apiparse.entity.MethodParsedResult;
 import com.hightech.apidoc.core.apiparse.entity.MqMessageObj;
 import com.hightech.apidoc.core.apiparse.support.PomConvert;
-import com.hightech.apidoc.core.lucene.IndexSearch;
-import com.hightech.apidoc.core.lucene.SearchIndexBean;
 import com.hightech.apidoc.core.util.VersionCompareUtil;
 import com.hightech.apidoc.dao.ext.DocApiDao;
 import com.hightech.apidoc.dao.ext.DocAppDao;
@@ -151,37 +149,6 @@ public class AppServiceImpl implements AppService {
         }
         LOGGER.info("END addPom. groupId:{},artifactId:{},version:{},appId:{}", groupId,
             artifactId, version, appId);
-    }
-
-    private void insertSearchIndex(DocService dsModel, int pomId) {
-        SearchIndexBean b = new SearchIndexBean();
-        b.setKeyId(dsModel.getId());
-        b.setKeyType(1);
-        b.setServiceDesc(dsModel.getDesc());
-        b.setServiceName(dsModel.getFullName());
-        b.setApiDesc("");
-        b.setApiName("");
-        b.setPomId(pomId);
-        List<SearchIndexBean> beanList = new ArrayList<>();
-        beanList.add(b);
-        IndexSearch.addIndex(beanList);
-    }
-
-    private void insertSearchIndex(List<DocApi> l, DocService dsModel, int pomId) {
-        List<SearchIndexBean> beanList = new ArrayList<>();
-        for (DocApi diModel : l) {
-            SearchIndexBean b = new SearchIndexBean();
-            b.setApiDesc(diModel.getDesc());
-            b.setServiceName(dsModel.getFullName());
-            b.setServiceDesc(dsModel.getDesc());
-            b.setKeyType(2);
-            b.setKeyId(diModel.getId());
-            b.setApiName(diModel.getDesc());
-            b.setPomId(pomId);
-            beanList.add(b);
-        }
-        IndexSearch.addIndex(beanList);
-
     }
 
     /**

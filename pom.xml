@@ -6,7 +6,6 @@
 	<modules>
 		<module>docmanager-common</module>
 		<module>docmanager-core</module>
-		<module>docmanager-model</module>
 		<module>docmanager-biz</module>
 		<module>docmanager-web</module>
 	</modules>
